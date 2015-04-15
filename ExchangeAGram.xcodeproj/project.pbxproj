@@ -14,6 +14,9 @@
 		AA3AFA6E1ADD82080000281F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3AFA6D1ADD82080000281F /* Images.xcassets */; };
 		AA3AFA711ADD82080000281F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3AFA6F1ADD82080000281F /* LaunchScreen.xib */; };
 		AA3AFA7D1ADD82080000281F /* ExchangeAGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3AFA7C1ADD82080000281F /* ExchangeAGramTests.swift */; };
+		AA3AFA871ADD84B60000281F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3AFA861ADD84B60000281F /* FeedCell.swift */; };
+		AA3AFA891ADD869B0000281F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3AFA881ADD869B0000281F /* MobileCoreServices.framework */; };
+		AAFB88E71ADEC00B0055E4C2 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB88E61ADEC00B0055E4C2 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		AA3AFA761ADD82080000281F /* ExchangeAGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3AFA7B1ADD82080000281F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA3AFA7C1ADD82080000281F /* ExchangeAGramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAGramTests.swift; sourceTree = "<group>"; };
+		AA3AFA861ADD84B60000281F /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		AA3AFA881ADD869B0000281F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AAFB88E61ADEC00B0055E4C2 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = ExchangeAGram/FeedItem.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3AFA891ADD869B0000281F /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,9 +88,9 @@
 			children = (
 				AA3AFA631ADD82080000281F /* AppDelegate.swift */,
 				AA3AFA681ADD82080000281F /* ViewController.swift */,
+				AA3AFA861ADD84B60000281F /* FeedCell.swift */,
+				AAFB88E61ADEC00B0055E4C2 /* FeedItem.swift */,
 				AA3AFA6A1ADD82080000281F /* Main.storyboard */,
-				AA3AFA6D1ADD82080000281F /* Images.xcassets */,
-				AA3AFA6F1ADD82080000281F /* LaunchScreen.xib */,
 				AA3AFA651ADD82080000281F /* ExchangeAGram.xcdatamodeld */,
 				AA3AFA611ADD82080000281F /* Supporting Files */,
 			);
@@ -94,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				AA3AFA621ADD82080000281F /* Info.plist */,
+				AA3AFA6D1ADD82080000281F /* Images.xcassets */,
+				AA3AFA6F1ADD82080000281F /* LaunchScreen.xib */,
+				AA3AFA881ADD869B0000281F /* MobileCoreServices.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -216,7 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA3AFA691ADD82080000281F /* ViewController.swift in Sources */,
+				AA3AFA871ADD84B60000281F /* FeedCell.swift in Sources */,
 				AA3AFA641ADD82080000281F /* AppDelegate.swift in Sources */,
+				AAFB88E71ADEC00B0055E4C2 /* FeedItem.swift in Sources */,
 				AA3AFA671ADD82080000281F /* ExchangeAGram.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +427,7 @@
 				AA3AFA821ADD82080000281F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA3AFA831ADD82080000281F /* Build configuration list for PBXNativeTarget "ExchangeAGramTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +436,7 @@
 				AA3AFA851ADD82080000281F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
